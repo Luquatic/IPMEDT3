@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Swapi VR</title>
+
+    <!-- Externe libraries -->
+    <script src="https://aframe.io/releases/0.3.2/aframe.min.js"></script>
+    <script src="node_modules/aframe-text-component/dist/aframe-text-component.min.js"></script>
+
+    <!-- Vendor -->
+    <script type ="text/javascript" src="assets/js/jquery-3.1.1.min.js"></script>
+
+    <!-- Eigen javascript -->
+    <script src="assets/js/main.js"></script>
+</head>
+<body>
+    <a-scene>
+
+        <a-camera look-controls>
+            <a-cursor color="white"></a-cursor>
+        </a-camera>
+
+        <a-sky src="assets/img/sky.jpg"></a-sky>
+        <a-box id="box1" data="/people/" color="blue" position="2 2 -3"></a-box>
+        <a-box id="box2" data="/planets/" color="blue" position="0 4 -3"></a-box>
+        <a-box id="box3" data="/films/" color="blue" position="-2 2 -3"></a-box>
+        <a-entity id="text" mixin="font" text="text: Ghallo; color:white;" position="-1 0 -7"></a-entity>
+
+    </a-scene>
+</body>
+</html>

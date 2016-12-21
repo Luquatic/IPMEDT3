@@ -1,0 +1,12 @@
+node_modules
+dist
+.tmp
+bower_components
+opdrachten/test/
+
+# Geen .idea/ map van Jetbrain.
+.idea/
+leren-leren
+
+# Geen zipmappen.
+*.zip
